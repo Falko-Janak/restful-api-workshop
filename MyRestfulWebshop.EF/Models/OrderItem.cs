@@ -12,7 +12,7 @@ namespace MyRestfulWebshop.EF.Models
         //public int Id { get; set; }
 
         //[Required]
-        //public Product Product { get; set; }
+        //public string ProductName { get; set; }
 
         //public int Amount { get; set; }
 
