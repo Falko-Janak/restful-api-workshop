@@ -32,6 +32,9 @@ namespace MyRestfulWebshop.Service
             if (product == null)
                 throw new System.Exception("Produkt nicht gefunden");
 
+            if (product.Stock <= 0)
+                throw new System.Exception("Produkt nicht auf Lager");
+
             var cart = await _context.Carts
                 .Include(c => c.Items)
                 .ThenInclude(ci => ci.Product)
@@ -60,6 +63,8 @@ namespace MyRestfulWebshop.Service
                 });
             }
 
+            product.Stock--;
+
             await _context.SaveChangesAsync();
         }
 
@@ -84,6 +89,12 @@ namespace MyRestfulWebshop.Service
             {
                 cart.Items.Remove(cartItem);
             }
+
+            var product = await _context.Products.FindAsync(productId);
+            if (product == null)
+                throw new System.Exception("Produkt nicht gefunden");
+
+            product.Stock++;
 
             await _context.SaveChangesAsync();
         }
