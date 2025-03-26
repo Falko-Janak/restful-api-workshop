@@ -34,7 +34,7 @@ namespace MyRestfulWebshop.API.Controllers
         public async Task<IActionResult> AddToCart([FromQuery] string username, int productId)
         {
             await _cartService.AddToCartAsync(username, productId);
-            return Ok("Produkt wurde zum Warenkorb hinzugefügt");
+            return Created();
         }
 
         [HttpDelete("{productId}")]

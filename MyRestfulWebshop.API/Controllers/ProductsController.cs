@@ -29,7 +29,7 @@ namespace MyRestfulWebshop.API.Controllers
         {
             var product = ProductConverter.FromEditDto(dto);
             await _productService.AddProductAsync(product);
-            return Ok();
+            return Created();
         }
 
         [HttpGet("{id}")]
