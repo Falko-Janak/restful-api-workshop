@@ -9,11 +9,11 @@ namespace MyRestfulWebshop.EF.Models
 {
     public class Cart
     {
-        //public int Id { get; set; }
+        public int Id { get; set; }
 
-        //[Required]
-        //public string Username { get; set; }
+        [Required]
+        public string Username { get; set; }
 
-        //public ICollection<CartItem> Items { get; set; } = new List<CartItem>();
+        public ICollection<CartItem> Items { get; set; } = new List<CartItem>();
     }
 }

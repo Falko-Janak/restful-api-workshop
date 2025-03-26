@@ -9,14 +9,14 @@ namespace MyRestfulWebshop.EF.Models
 {
     public class OrderItem
     {
-        //public int Id { get; set; }
+        public int Id { get; set; }
 
-        //[Required]
-        //public string ProductName { get; set; }
+        [Required]
+        public string ProductName { get; set; }
 
-        //public int Amount { get; set; }
+        public int Amount { get; set; }
 
-        //public decimal PriceAtOrderDate { get; set; }
+        public decimal PriceAtOrderDate { get; set; }
 
     }
 }

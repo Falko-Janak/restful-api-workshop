@@ -9,18 +9,18 @@ namespace MyRestfulWebshop.EF.Models
 {
     public class Order
     {
-        //public int Id { get; set; }
+        public int Id { get; set; }
 
-        //[Required]
-        //public string Username { get; set; }
+        [Required]
+        public string Username { get; set; }
 
-        //public DateTime OrderDate { get; set; }
+        public DateTime OrderDate { get; set; }
 
-        ///// <summary>
-        ///// Gesamtsumme
-        ///// </summary>
-        //public decimal TotalSum { get; set; }
+        /// <summary>
+        /// Gesamtsumme
+        /// </summary>
+        public decimal TotalSum { get; set; }
 
-        //public ICollection<OrderItem> OrderItems { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; }
     }
 }
