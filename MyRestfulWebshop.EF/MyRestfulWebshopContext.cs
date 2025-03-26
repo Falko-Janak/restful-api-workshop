@@ -18,17 +18,26 @@ namespace MyRestfulWebshop.EF
 
         //public DbSet<Product> Products { get; set; }
         //public DbSet<Cart> Carts { get; set; }
+        //public DbSet<CartItem> CartItems { get; set; }
         //public DbSet<Order> Orders { get; set; }
         //public DbSet<OrderItem> OrderItems { get; set; }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    // Konfiguration der Viele-zu-Viele Beziehung zwischen Cart und Product
-        //    modelBuilder.Entity<Cart>()
-        //        .HasMany(c => c.Products)
-        //        .WithMany();
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<CartItem>()
+            //    .HasKey(ci => ci.Id);
 
-        //    base.OnModelCreating(modelBuilder);
-        //}
+            //modelBuilder.Entity<CartItem>()
+            //    .HasOne(ci => ci.Cart)
+            //    .WithMany(c => c.Items)
+            //    .HasForeignKey(ci => ci.CartId);
+
+            //modelBuilder.Entity<CartItem>()
+            //    .HasOne(ci => ci.Product)
+            //    .WithMany()
+            //    .HasForeignKey(ci => ci.ProductId);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

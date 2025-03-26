@@ -14,6 +14,6 @@ namespace MyRestfulWebshop.EF.Models
         //[Required]
         //public string Username { get; set; }
 
-        //public ICollection<Product> Products { get; set; }
+        //public ICollection<CartItem> Items { get; set; } = new List<CartItem>();
     }
 }
