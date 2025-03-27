@@ -1,5 +1,13 @@
 # Live Workshop: RESTful APIs in ASP.NET Core
 
+
+## Hinweis
+
+Wechselt auf den Branch "final", wenn ihr den fertigen Codestand sehen wollt.
+
+---
+
+
 In diesem 3-stündigen Workshop entwickelst du eine praxisnahe REST API mit ASP.NET Core. Der Fokus liegt nicht nur auf der Funktionalität, sondern vor allem auf **gutem API-Design** nach modernen Standards.
 
 ---
