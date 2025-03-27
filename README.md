@@ -73,4 +73,9 @@ Nach diesem Workshop kannst du strukturierte, saubere und erweiterbare REST APIs
 
 ---
 
+Workshop Host:
+- Falko Janak
+- contact@falkojanak.com
+- https://www.linkedin.com/in/falko-janak-304b6390/
+
 Dieser Workshop wird ermöglicht durch [Coding mit Jannick](https://codingmitjannick.de/s/coding-mit-jannick).
